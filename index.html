@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment1 Q2</title>
+    <link href="indexCss.css" rel="stylesheet">
+    <script type="text/javascript" src = "index.js"></script>
+    <script type="text/javascript" src = "level.js"></script>
+</head>
+<body onload="onloadFunction()">
+    <div id="container">
+
+        <div id="startMenu">  
+            <br><p>Hello! This is BreakOut Game!!</p><br>
+            <button id='playButton' onclick='playButtonFunction()'>Play</button><br>
+            <button id='help' onclick='helpButtonFunction()'>Help</button>
+        </div>
+        
+        <div id='startMenu2FromPlay'>
+            <br><p>Please choose number of paddle!</p><br>
+            <button id='onePaddleButton' onclick='onePaddleButtonFunction()'>One Paddle</button><br>
+            <button id='twoPaddleButton' onclick='twoPaddleButtonFunction()'>two Paddles</button><br>
+            <button id='returnToStart' onclick='returnToStartFunction()'>Return</button>
+        </div>
+
+        <div id='startMenu3FromLevel'>
+            <button class= "levelButton" id='level1' onclick='level1ButtonFunction()'>Level 1</button><br>
+            <button class= "levelButton" id='level2' onclick='level2ButtonFunction()'>Level 2</button><br>
+            <button class= "levelButton" id='level3' onclick='level3ButtonFunction()'>Level 3</button><br>
+            <button class= "levelButton" id='level4' onclick='level4ButtonFunction()'>Level 4</button><br>
+            <button class= "levelButton" id='level5' onclick='level5ButtonFunction()'>Level 5</button><br>
+            <button class= "levelButton" id='level6' onclick='level6ButtonFunction()'>Level 6</button><br>
+            <button id='returnToStart' onclick='returnToStartFunction()'>Return</button><br>
+        </div>
+
+        <div id='startMenu4FromPaddle'>
+            <br><p>Are you Ready?</p><br>
+            <button id='startNormalGame' onclick='startNormalGameFunction()'>Quick Game</button><br>
+            <button id='levelup' onclick="levelupFunction()">Level Up Game</button><br>
+            <button id='levellist' onclick="levellistFunction()">Level List</button><br>
+            <button id='returnToStart' onclick='returnToStartFunction()'>Return</button>
+        </div>
+        
+        <div id="playStatus">
+            <p id="timer" style="margin-right: 50px;">START!</p>
+            <p id="score" style="margin-right: 20px;">Score: 0</p>
+            <p id="lifeImage" style = "width:90px"></p>
+            <p style="margin-right: 20px;" id='levelcountWords'></p>
+            <button id='returnToStart' onclick='returnToStartFunction()'>Menu</button>
+            <button id='stop' onclick='stopFunction()'>Stop</button>
+        </div>
+
+        <canvas id="board" height="500px" width="1000px"></canvas>
+
+        <div id="gameover" ><br>Game Over!<br><br>
+            <button id="restart" onclick="restartOnclickFunction()">Restart</button>
+            <button id='close' onclick='closeFunction()'>Close</button>
+        </div>
+
+        <div id="levelGameFinish">
+            <p>Congratulation!</p>
+            <button id='continue' onclick='continueFunction()'>Continue</button><br>
+            <button id='returnToStart' onclick='returnToStartFunction()'>Return</button><br>
+            <button id='close' onclick='closeFunction()'>Close</button>
+        </div>
+
+        <div id='normalGameFinish'>
+            <p>Congratulation!</p>
+            <button id='returnToStart' onclick='returnToStartFunction()'>Return</button><br>
+            <button id='close' onclick='closeFunction()'>Close</button>
+        </div>
+        
+    </div>
+    <div id='helpMenu'>
+        <p>How To Play</p><br>
+        <p style="font-size: 50%; color:DarkTurquoise  ;">There are many ways that you can enjoy!<br>
+        <b>First!</b> Back to Menu and Click "Play" Button!<br>
+        <b>Second!</b> Choose number of paddles you want to play! For those who are not comfident in playing this game,
+            I recommend you to play with two paddles!<br>
+        <b>Third!</b> If you just want to play once or play quickly, please choose "Quick Game"! 
+            If you want to enjoy many rounds or different patterns of game, please choose "Level Up Game"!
+            If you want to enjoy a specific level of game, please choose "Level List"!<br>
+        <hr></p>
+        <p style="font-size: 50%; color:DarkTurquoise  ;"><b>How to control the paddle(s)?</b><br>
+        Easy! just press your keyboard's right button to let the paddle to move right, and press left button to move left!<br>
+        If the ball stricks the bottom, you will loose your life.<br>
+        There are 3 lifes that already gave to you!<br>
+        For the "Level Up Game", if you complete the stage, the game will automatically switch to next level.
+        <hr>
+        Ok that's it! Have Fun!</p><br>
+        <button id='returnToStart' onclick='returnToStartFunction()'>Return</button>
+    </div>
+
+    
+</body>
+
+</html>

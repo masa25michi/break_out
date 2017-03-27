@@ -1,0 +1,121 @@
+*{
+	padding: 0; 
+	margin:0;
+	font-family: Arial;
+}body{
+	margin:auto;
+}
+canvas#board{
+	position: absolute;
+	border:1px solid black;
+	background-color: black;
+	display: block; 
+	padding:0;
+	z-index: 1;
+	margin:0;
+}
+div#container{
+	position:relative;
+	margin: 0 auto;
+	height:500px;
+	width:1000px;
+	/*border:2px solid black;*/
+	background-color: black;
+}
+div#container #startMenu3FromLevel, #startMenu4FromPaddle, 
+#levelGameFinish,#gameover, #startMenu, #startMenu2FromPlay, #normalGameFinish{
+	position: absolute;
+	text-align:center;
+	height:490px;
+	width:500px;
+	border:1px solid black;
+	background-color: black;
+	color:red;
+	font-size: 300%;
+	left:50%;
+   	top:50%;	
+   	transform: translate(-50%, -50%);
+   	z-index: 2;
+	margin: 0;
+
+}
+div#gameover,#normalGameFinish,#levelGameFinish{
+	border:1px solid blue;
+	height:300px;
+}
+div#helpMenu{
+	padding:0;
+	margin: auto;
+	text-align:center;
+	width:700px;
+	border:1px solid black;
+	background-color: black;
+	color:red;
+	font-size: 300%;
+}
+div#playStatus{
+	background-color: black;
+	padding:0;
+	margin:0 auto;
+	text-align:center;
+	color: red;
+	font-size:100%;
+	width:1000px;
+	/*border-style: solid;*/
+	border:1px solid black;
+	border-bottom-color: #2980b9;
+}
+
+#lifecountWords, #score, #timer{
+	font-size:150%;
+}
+img{
+	width:30px;
+	height: 30px;
+}
+p{
+	display:inline;
+}
+button{
+	text-align:center;
+	text-align:center;
+	font-size: 70%;
+	margin-top: 15px;
+	width: 200px;
+
+	background: #101112;
+	background-image: -webkit-linear-gradient(top, #101112, #2980b9);
+	background-image: -moz-linear-gradient(top, #101112, #2980b9);
+	background-image: -ms-linear-gradient(top, #101112, #2980b9);
+	background-image: -o-linear-gradient(top, #101112, #2980b9);
+	background-image: linear-gradient(to bottom, #101112, #2980b9);
+	-webkit-border-radius: 40;
+	-moz-border-radius: 40;
+	border-radius: 40px;
+	
+	color: #ffffff;
+	font-size: 26px;
+	padding: 10px 20px 10px 17px;
+	text-decoration: none;
+}
+
+button:hover {
+  background: #38454d;
+  background-image: -webkit-linear-gradient(top, #38454d, #3498db);
+  background-image: -moz-linear-gradient(top, #38454d, #3498db);
+  background-image: -ms-linear-gradient(top, #38454d, #3498db);
+  background-image: -o-linear-gradient(top, #38454d, #3498db);
+  background-image: linear-gradient(to bottom, #38454d, #3498db);
+  text-decoration: none;
+}
+
+
+button#returnToStart{
+	background-color: orange;
+}
+div#playStatus button{
+	margin-left: 10px;
+	width:80px;
+	height:28px;
+	font-size: 65%;
+}
